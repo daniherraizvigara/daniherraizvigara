@@ -32,10 +32,6 @@ body {
     background-color: #1b3b5f;
 }
 
-.blue-text {
-    color: #007bff; /* Use the same blue color as the border */
-}
-
 .navbar-brand {
     font-weight: bold;
     color: #f0f4f8;
@@ -47,7 +43,7 @@ body {
 
 .hero-section {
     background: url('background.jpg') no-repeat center center/cover;
-    color: #f0f4f8;
+    color: #1b3b5f;
     padding: 100px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
