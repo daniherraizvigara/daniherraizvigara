@@ -1,166 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum de Dani Herraiz Vigara</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dani Herraiz Vigara - Currículum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">Dani Herraiz Vigara</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
-                <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
-                <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-            </ul>
-            <button class="btn btn-outline-light ml-3" id="toggle-dark-mode">Modo Oscuro</button>
+  <!-- Modo oscuro toggle -->
+  <button id="dark-mode-toggle">🌙</button>
+
+  <!-- Inicio -->
+  <section id="inicio" class="section">
+    <div class="container">
+      <img src="tu_foto.jpg" alt="Dani Herraiz Vigara" class="profile-photo">
+      <h1>Dani Herraiz Vigara</h1>
+      <h2>Ingeniería Biomédica y Telecomunicaciones</h2>
+      <p class="description">Soy un apasionado de la tecnología y la innovación, con enfoque en la ingeniería biomédica y las telecomunicaciones. Busco oportunidades para aplicar mis conocimientos y crecer profesionalmente.</p>
+      <a href="tu_cv.pdf" download class="btn">Descargar CV</a>
+    </div>
+  </section>
+
+  <!-- Sobre Mí -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <h2>Sobre Mí</h2>
+      <p>Actualmente estoy en búsqueda de <strong>prácticas extracurriculares</strong> para aprender sobre el sector y conocer el funcionamiento de las empresas. Me motiva trabajar en proyectos desafiantes que impacten positivamente en la sociedad.</p>
+      <img src="icono_sobre_mi.png" alt="Icono Sobre Mí" class="icon">
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section id="educacion" class="section">
+    <div class="container">
+      <h2>Educación</h2>
+      <ul>
+        <li><strong>Grado en Ingeniería Biomédica</strong> - Universidad XYZ (2018-2022)</li>
+        <li><strong>Máster en Telecomunicaciones</strong> - Universidad ABC (2022-2023)</li>
+        <li><strong>Curso de Desarrollo Web</strong> - Plataforma XYZ (2023)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experiencia y Proyectos -->
+  <section id="experiencia" class="section">
+    <div class="container">
+      <h2>Experiencia y Proyectos</h2>
+      <div class="project">
+        <h3>Proyecto 1: Sistema de Monitoreo Cardíaco</h3>
+        <p>Desarrollo de un sistema para monitorear la actividad cardíaca en tiempo real usando Arduino y Python.</p>
+        <p><strong>Tecnologías:</strong> Arduino, Python, IoT</p>
+      </div>
+      <div class="project">
+        <h3>Proyecto 2: Aplicación de Gestión Hospitalaria</h3>
+        <p>Diseño de una aplicación web para la gestión de pacientes y citas médicas.</p>
+        <p><strong>Tecnologías:</strong> React, Node.js, MongoDB</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="section">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div class="skill">
+          <span>HTML/CSS</span>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
         </div>
-    </nav>
-
-    <header id="inicio" class="hero-section">
-        <div class="container text-center">
-            <div class="title-background mt-3">
-                <h1 class="title">Dani Herraiz Vigara</h1>
-                <h3 class="subtitle">Ingeniero de Telecomunicaciones y Biomédica</h3>
-            </div>
-            <p class="mt-3 blue-text">Soy un apasionado de la tecnología y la biomedicina, en búsqueda constante de nuevos desafíos y oportunidades para aprender y crecer profesionalmente.</p>
-            <div class="d-inline-block">
-                <button id="download" class="btn btn-primary">PDF</button>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-                <script>
-                    document.getElementById('download').addEventListener('click', () => {
-                        const element = document.body; // Puedes cambiarlo al elemento específico que quieres descargar
-                        html2pdf().from(element).save();
-                    });
-                </script>
-            </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
         </div>
-    </header>
-
-    <section id="sobre-mi" class="container mt-3">
-        <h2 class="text-center">Sobre Mí</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <p>Soy un apasionado de la tecnología y la captación de información a través de sensores (IoT). Mi interés radica en todo el proceso de adquisición de datos en la fase física, desde el desarrollo de infraestructuras de sensores hasta su programación y comunicación con la red.</p>
-                <p>Elegí estudiar Ingeniería Biomédica y Telecomunicaciones porque creo firmemente en el impacto positivo que la tecnología puede tener en la vida de las personas. Me motiva la idea de desarrollar soluciones innovadoras que faciliten la captación de datos y mejoren la funcionalidad en ámbitos como la automoción, la domótica y la industria conectada.</p>
-                <p>Actualmente, estoy en búsqueda de prácticas extracurriculares que me permitan adquirir experiencia en el sector, conocer el funcionamiento interno de una empresa y encontrar un lugar donde poder crecer profesionalmente y construir un futuro sólido. Me interesa especialmente el mundo del IoT y los sensores, independientemente del ámbito de aplicación, ya que creo que la recopilación y el análisis de datos son clave en la evolución tecnológica.</p>
-                <p><strong>Habilidades Técnicas</strong></p>
-                <ul>
-                    <li>Diseño de circuitos electrónicos y RF.</li>
-                    <li>Programación: Java, C, Kotlin, R.</li>
-                    <li>Procesamiento de señales y sistemas embebidos.</li>
-                    <li>Microcontroladores e IoT (Arduino, ThingSpeak, sensores conectados).</li>
-                    <li>Redes de Internet y telecomunicaciones.</li>
-                </ul>
-                <p><strong>Habilidades Personales</strong></p>
-                <p>Me considero un líder natural, con una gran capacidad para trabajar en equipo y delegar responsabilidades de manera eficiente. Gracias a mi experiencia laboral previa, he desarrollado una fuerte habilidad para resolver problemas con rapidez y eficacia. Tengo un enfoque analítico que me permite evaluar cada situación detenidamente antes de actuar, optimizando la toma de decisiones.</p>
-                <p><strong>Lo que me diferencia</strong></p>
-                <p>Lo que realmente me distingue es mi pasión y energía por lo que hago. Me gusta enfrentar desafíos y utilizar mi ingenio para encontrar soluciones eficientes a problemas complejos. Siempre estoy dispuesto a dar el máximo en cada proyecto, con una mentalidad orientada a la innovación y el aprendizaje continuo.</p>
-            </div>
+        <div class="skill">
+          <span>Python</span>
+          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
         </div>
-        <div class="text-center">
-            <img src="icono-motivacion.png" alt="Motivación" class="mt-3">
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="educacion" class="container mt-3">
-        <h2 class="text-center">Educación</h2>
-        <ul class="timeline mt-3">
-            <li class="timeline-item">
-                <h5>Grado en Ingeniería Biomédica - Universidad XYZ (2020 - Actualidad)</h5>
-            </li>
-            <li class="timeline-item">
-                <h5>Curso de Programación en Python - Plataforma ABC (2023)</h5>
-            </li>
-            <li class="timeline-item">
-                <h5>Certificación en Redes y Telecomunicaciones - Instituto DEF (2022)</h5>
-            </li>
-        </ul>
-    </section>
+  <!-- Contacto y Redes -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="social-links">
+        <a href="https://linkedin.com/tu_perfil" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tu_perfil" target="_blank">GitHub</a>
+        <a href="mailto:tu_correo@example.com">Correo</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="experiencia" class="container mt-3">
-        <h2 class="text-center">Experiencia</h2>
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <div class="project-card">
-                    <h5>Proyecto de Investigación Biomédica</h5>
-                    <p>Tecnologías utilizadas: Python, MATLAB</p>
-                    <p>Desarrollo de un algoritmo para el análisis de señales biomédicas con el objetivo de mejorar la detección de anomalías.</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="project-card">
-                    <h5>Aplicación Móvil para la Gestión de Salud</h5>
-                    <p>Tecnologías utilizadas: Java, Android Studio</p>
-                    <p>Diseño y desarrollo de una aplicación móvil para la gestión de citas médicas y el seguimiento de tratamientos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="habilidades" class="container mt-3">
-        <h2 class="text-center">Habilidades</h2>
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <h5>Habilidades Técnicas</h5>
-                <ul class="list-group">
-                    <li class="list-group-item">Python <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div></li>
-                    <li class="list-group-item">MATLAB <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div></li>
-                    <li class="list-group-item">Java <div class="progress"><div class="progress-bar" style="width: 60%;"></div></div></li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h5>Habilidades Blandas</h5>
-                <ul class="list-group">
-                    <li class="list-group-item">Trabajo en equipo <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div></li>
-                    <li class="list-group-item">Comunicación <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div></li>
-                    <li class="list-group-item">Resolución de problemas <div class="progress"><div class="progress-bar" style="width: 75%;"></div></div></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="container mt-3">
-        <h2 class="text-center">Contacto</h2>
-        <form class="mt-3">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-        <div class="social-links text-center mt-3">
-            <a href="https://www.linkedin.com/in/daniherraizvigara" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/daniherraizvigara" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:daniherraizvigara@example.com"><i class="fas fa-envelope"></i></a>
-        </div>
-    </section>
-
-    <footer class="text-center p-3 mt-3">
-        <p>&copy; 2025 Dani Herraiz Vigara. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
