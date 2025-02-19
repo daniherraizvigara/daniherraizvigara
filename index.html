@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dani Herraiz Vigara</title>
+    <title>Currículum de Dani Herraiz Vigara</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
@@ -34,18 +34,20 @@
                 <h3 class="subtitle">Ingeniero de Telecomunicaciones y Biomédica</h3>
             </div>
             <p class="mt-3 blue-text">Soy un apasionado de la tecnología y la biomedicina, en búsqueda constante de nuevos desafíos y oportunidades para aprender y crecer profesionalmente.</p>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-            <button id="download">PDF</button>
-            <script>
-                document.getElementById('download').addEventListener('click', () => {
-                const element = document.body; // Puedes cambiarlo al elemento específico que quieres descargar
-                html2pdf().from(element).save();
-              });
-            </script>
+            <div class="d-inline-block">
+                <button id="download" class="btn btn-primary">PDF</button>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+                <script>
+                    document.getElementById('download').addEventListener('click', () => {
+                        const element = document.body; // Puedes cambiarlo al elemento específico que quieres descargar
+                        html2pdf().from(element).save();
+                    });
+                </script>
+            </div>
         </div>
     </header>
 
-    <section id="sobre-mi" class="container mt-5">
+    <section id="sobre-mi" class="container mt-3">
         <h2 class="text-center">Sobre Mí</h2>
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -71,22 +73,22 @@
         </div>
     </section>
 
-    <section id="educacion" class="container mt-5">
+    <section id="educacion" class="container mt-3">
         <h2 class="text-center">Educación</h2>
         <ul class="timeline mt-3">
             <li class="timeline-item">
-                <h5>Grado Profesional de Música en Especialidad de Piano - Conservatorio Municipal de Cervera (2023)</h5>
+                <h5>Grado en Ingeniería Biomédica - Universidad XYZ (2020 - Actualidad)</h5>
             </li>
             <li class="timeline-item">
-                <h5>Bachillerato - Instituto Antoni Torroja (2020 - 2022)</h5>
+                <h5>Curso de Programación en Python - Plataforma ABC (2023)</h5>
             </li>
             <li class="timeline-item">
-                <h5>Doble grado en Ingeniería Biomédica e Ingeniería de Sistemas y Servicios de Telecomunicaciones - Universidad URV (2022 - Actualidad)</h5>
+                <h5>Certificación en Redes y Telecomunicaciones - Instituto DEF (2022)</h5>
             </li>
         </ul>
     </section>
 
-    <section id="experiencia" class="container mt-5">
+    <section id="experiencia" class="container mt-3">
         <h2 class="text-center">Experiencia</h2>
         <div class="row mt-3">
             <div class="col-md-6">
@@ -106,7 +108,7 @@
         </div>
     </section>
 
-    <section id="habilidades" class="container mt-5">
+    <section id="habilidades" class="container mt-3">
         <h2 class="text-center">Habilidades</h2>
         <div class="row mt-3">
             <div class="col-md-6">
@@ -128,7 +130,7 @@
         </div>
     </section>
 
-    <section id="contacto" class="container mt-5">
+    <section id="contacto" class="container mt-3">
         <h2 class="text-center">Contacto</h2>
         <form class="mt-3">
             <div class="form-group">
@@ -152,7 +154,7 @@
         </div>
     </section>
 
-    <footer class="text-center p-3 mt-5">
+    <footer class="text-center p-3 mt-3">
         <p>&copy; 2025 Dani Herraiz Vigara. Todos los derechos reservados.</p>
     </footer>
 
