@@ -13,10 +13,18 @@ body {
     color: white;
     padding: 100px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .hero-section img {
     border: 5px solid white;
+}
+
+.hero-section .title-background {
+    background-color: rgba(0, 0, 139, 0.7); /* Azul oscuro con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .container {
