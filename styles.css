@@ -24,30 +24,38 @@
 
 body {
     font-family: 'Roboto', 'Open Sans', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f0f4f8;
+    color: #1b3b5f;
+}
+
+.navbar {
+    background-color: #1b3b5f;
 }
 
 .navbar-brand {
     font-weight: bold;
+    color: #f0f4f8;
+}
+
+.nav-link {
+    color: #f0f4f8;
 }
 
 .hero-section {
     background: url('background.jpg') no-repeat center center/cover;
-    color: white;
+    color: #f0f4f8;
     padding: 100px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
 .hero-section img {
-    border: 5px solid white;
+    border: 5px solid #1b3b5f;
 }
 
 .hero-section .title-background {
-    background-color: rgba(0, 0, 139, 0.7); /* Azul oscuro con transparencia */
+    background-color: rgba(27, 59, 95, 0.9); /* Azul oscuro */
     padding: 20px;
-    border-radius: 10px;
     display: inline-block;
 }
 
@@ -56,7 +64,7 @@ body {
 }
 
 .timeline {
-    border-left: 3px solid #007bff;
+    border-left: 3px solid #1b3b5f;
     padding-left: 20px;
     list-style: none;
 }
@@ -71,36 +79,40 @@ body {
 }
 
 .project-card {
-    border: 1px solid #ddd;
+    border: 1px solid #1b3b5f;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .progress-bar {
-    background-color: #007bff;
+    background-color: #1b3b5f;
+}
+
+.list-group-item {
+    border: 1px solid #1b3b5f;
+    color: #1b3b5f;
 }
 
 .social-links a {
     margin: 0 10px;
-    color: #007bff;
+    color: #1b3b5f;
     font-size: 24px;
 }
 
 footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #1b3b5f;
+    color: #f0f4f8;
+    padding: 20px 0;
 }
 
 .dark-mode {
-    background-color: #212529;
-    color: #f8f9fa;
+    background-color: #1b3b5f;
+    color: #f0f4f8;
 }
 
 .dark-mode .navbar {
-    background-color: #343a40;
+    background-color: #123;
 }
 
 .dark-mode .hero-section {
@@ -108,14 +120,14 @@ footer {
 }
 
 .dark-mode .timeline {
-    border-left: 3px solid #17a2b8;
+    border-left: 3px solid #7ea9d3;
 }
 
 .dark-mode .progress-bar {
-    background-color: #17a2b8;
+    background-color: #7ea9d3;
 }
 
 .dark-mode .project-card {
-    border-color: #343a40;
+    border-color: #123;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
