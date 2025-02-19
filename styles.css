@@ -1,57 +1,89 @@
-/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* Encabezado */
-header {
-  background-color: #005f73;
-  color: white;
-  text-align: center;
-  padding: 20px;
+.navbar-brand {
+    font-weight: bold;
 }
 
-h1 {
-  margin: 0;
+.hero-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-header p {
-  font-style: italic;
+.hero-section img {
+    border: 5px solid white;
 }
 
-/* Secciones */
-section {
-  padding: 20px;
-  margin: 10px;
-  background-color: white;
-  border-radius: 8px;
+.container {
+    padding: 60px 0;
 }
 
-h2 {
-  color: #005f73;
+.timeline {
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
+    list-style: none;
 }
 
-/* Enlaces */
-a {
-  color: #0077b6;
-  text-decoration: none;
+.timeline .timeline-item {
+    margin-bottom: 20px;
 }
 
-a:hover {
-  text-decoration: underline;
+.timeline .timeline-item h5 {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-/* Pie de página */
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #007bff;
+    font-size: 24px;
+}
+
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #005f73;
-  color: white;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.dark-mode .navbar {
+    background-color: #343a40;
+}
+
+.dark-mode .hero-section {
+    background: url('background-dark.jpg') no-repeat center center/cover;
+}
+
+.dark-mode .timeline {
+    border-left: 3px solid #17a2b8;
+}
+
+.dark-mode .progress-bar {
+    background-color: #17a2b8;
+}
+
+.dark-mode .project-card {
+    border-color: #343a40;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
