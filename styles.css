@@ -32,6 +32,10 @@ body {
     background-color: #1b3b5f;
 }
 
+.blue-text {
+    color: #007bff; /* Use the same blue color as the border */
+}
+
 .navbar-brand {
     font-weight: bold;
     color: #f0f4f8;
